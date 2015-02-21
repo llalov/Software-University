@@ -1,0 +1,6 @@
+1-st I entered windows cmd.
+2-nd I wrote: cd C:\users\Lucho\workspace\Intro-Java-Homework\src.
+3-rd I wrote : dir.
+4-nd I wrote: javac (and the name of the file).java;
+5-th I wrote: dir (again);
+6-th I wrote: java (and the name of the file without .java);
