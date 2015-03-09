@@ -1,0 +1,89 @@
+body {
+    background: #EEEEEE;
+}
+header {
+    margin-left: 0.2em;
+    font-size: 1.9em;
+    font-weight:bold;
+    color: #234465;
+}
+div {
+    display: inline-block;
+    width: 30.5%;
+    height: 20.56em;
+}
+form {
+    display: inline-block;
+}
+input {
+    display: inline-block;
+    width: 27em;
+    height: 2em;
+    padding: 0.5em;
+    margin-bottom: 1.3em;
+    float: left;
+    margin-left:1em;
+}
+p{
+    color: #767676;
+    margin-left: 0.4em;
+}
+form#register {
+    float: left;
+    width: 25em;
+    display: inline-block;
+}
+form#login {
+    width: 25.3em;
+    height: 20.8em;
+    background: #234465;
+}
+input[type=submit]#registerButton {
+    width: 15em;
+    height: 2.8em;
+    float: right;
+    margin-right: 1.1em;
+    border: 2px solid #234465;
+    color: #234465;
+    font-weight: bold;
+}
+input[type=submit]#loginButton {
+    width: 11em;
+    height: 2.8em;
+    float: right;
+    margin-right: 2em;
+    color: white;
+    background: #234465;
+    border: 2px solid #F19607;
+}
+h1 {
+    margin-left: 0.6em ;
+    font-size: 1.3em;
+    color: white;
+
+}
+#checkBox {
+    position: relative !important;
+    float: left;
+    margin-left: -11.8em;
+    margin-right: -10.3em;
+    margin-top: -0.3em;
+}
+#forgotPass {
+    float:right;
+    margin-right: -10.5em;
+    margin-top: 3em;
+    text-decoration: underline;
+    color: white;
+    font-size: 14px;
+}
+#areYouNew {
+    color: #656565;
+}
+span {
+    color: #234465;
+}
+label {
+    color: white;
+    margin-left: -1.6em;
+}

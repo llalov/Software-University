@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="6_2_FlightOrder.css">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <main>
+    <header>FLIGHT ORDER</header>
+        <form method="" action="">
+        <div id="leftDiv">
+            <label class="blockLabel" for="fromCity">From</label>
+            <select class="long" id="fromCity" name="fromCity">
+                <option value="1" selected="selected"><strong>enter a city</strong></option>
+                <option value="2">Sofia</option>
+                <option value="3">Plovdiv</option>
+                <option value="4">Varna</option>
+            </select>
+            <BR>&nbsp;<BR>
+            <label class="blockLabel" for="departureDate">Departute Date</label>
+            <input class="long" type="text" id="departureDate" name="date" required="true" placeholder="09.06.2014">
+            <label class="blockLabel" for="returnDate">Return Date</label>
+            <input class="long" type="text" id="returnDate" name="returnDate" placeholder="13.06.2014" required="true"><br>
+            <div>
+                <label class="blockLabel" for="people12+">12+</label>
+                <input class="short" type="number" id="people12+" name="people12+" value="0">
+            </div>
+            <div>
+                <label class="blockLabel" for="people2-12">2-12</label>
+                <input class="short" type="text" id="people2-12" name="people2-12" value="0">
+            </div>
+            <div>
+                <label class="blockLabel" for="people0-2">0-2</label>
+                <input class="short" type="text" id="people0-2" name="people0-2" value="0">
+            </div>
+        </div>
+
+        <div id="rightDiv">
+            <label class="blockLabel" for="toCity">To</label>
+            <select class="long" id="toCity" name="toCity">
+                <option value="1" selected="selected">enter a city</option>
+                <option value="2">Sofia</option>
+                <option value="3">Plovdiv</option>
+                <option value="4">Varna</option>
+            </select><br>
+            <input id="checkBox" type="checkbox" name="preferDirects">
+            <label for="checkBox">Prefer directs</label>
+            <label class="blockLabel" for="fromTime">Time Interval</label>
+            <input class="medium" type="text" id="fromTime" name="fromTime" placeholder="00:20" required="true">
+            <input class="medium" type="text" id="toTime" name="toTime" placeholder="05:00" required="true">
+            <label class="blockLabel" for="fromTime2">Time Interval</label>
+            <input class="medium" type="text" id="fromTime2" name="fromTime2" placeholder="16:00" required="true">
+            <input class="medium" type="text" id="toTime2" name="toTime2" placeholder="22:00" required="true">
+            <label class="blockLabel" for="class">Choose class</label>
+            <select class="long" id="class" name="class">
+                <option value="1" selected="selected">Economy</option>
+                <option value="2">Business</option>
+            </select><br>
+            <input class="long" type="submit" value="Search">
+        </div>
+        </form>
+    </main>
+</body>
+</html>
