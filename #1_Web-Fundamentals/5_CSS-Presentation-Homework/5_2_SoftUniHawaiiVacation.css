@@ -1,0 +1,31 @@
+#background{
+    z-index: 1;
+    float: left;
+    width: 900px;
+    height: 600px;
+    background-image: -webkit-radial-gradient(23% 27%, rgb(249, 238, 248) 12%, rgb(251,250,203) 1%, rgb(0, 104, 219) 60%);
+    background: -moz-radial-gradient(23% 27%, rgb(249, 238, 248) 12%, rgb(251,250,203) 1%, rgb(0, 104, 219) 60%);
+    background: -ms-radial-gradient(23% 27%, rgb(249, 238, 248) 12%, rgb(251,250,203) 1%, rgb(0, 104, 219) 60%);
+}
+div {
+    width: 900px;
+    height: 600px;
+    background-image: url("TediHula.png"), url("PetiaHula.png"),url("AlexHula.png"),url("VladoGHula.png"),  url("NakovHula.png"),  url("VladoKHula.png"), url("HawaiiBackground.png");
+    background-position:35% 95%, 28% 86%, 73% 87%, 7% 90% , 59% 76%, 97% 90%, left bottom;
+    background-repeat: no-repeat no-repeat;
+    z-index: 2;
+}
+@font-face {
+    font-family: Animated;
+    src: url("Animated.ttf");
+}
+body {
+    font-family: Animated;
+}
+header {
+    text-align: right;
+    padding: 15px;
+    font-size: 50px;
+    color: #FDBC21;
+}
+

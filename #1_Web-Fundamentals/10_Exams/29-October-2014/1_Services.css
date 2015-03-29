@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: OpenSans;
+    src: url(elements/OpenSans-ExtraBold.ttf);
+}
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    background: #F0F0E8;
+    font-weight: lighter;
+    color: #848392;
+}
+.center-align>#main-head {
+    font-family: OpenSans, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    color: #009288;
+}
+#symbols {
+    font-size: 31px;
+}
+.center-align{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.section {
+    border-left: 10px solid #F0F0E8;
+    width: 220px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+.section:hover {
+    cursor: pointer;
+    background: #F6F6F5;
+    border-left: 10px solid #009288;
+}
+#wrapper-section {
+    margin: auto;
+    padding-left: 94px;
+}
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+.title {
+    font-family: OpenSans, Helvetica, sans-serif;
+    color: #7F8287;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+.text {
+    font-size: 13px;
+    line-height: 250%;
+}
+#below-head {
+    font-size: 17px;
+}

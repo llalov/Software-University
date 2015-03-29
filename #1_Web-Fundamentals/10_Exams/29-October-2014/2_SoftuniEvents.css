@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: LDFComicSans, Arial, sans-serif;
+}
+@font-face {
+    font-family: ThisNight;
+    src: url(elements/ThisNight.ttf);
+}
+@font-face {
+    font-family: LDFComicSans;
+    src: url(elements/LDFComicSans.ttf);
+}
+#wrapper {
+    width: 960px;
+    margin: auto;
+}
+.center-align {
+    display: block;
+    text-align: center;
+}
+#top-menu {
+    list-style: none;
+}
+#bottom-menu {
+    list-style: none;
+}
+#top-menu >li, #bottom-menu >li {
+    display: inline-block;
+}
+article {
+    display: inline-block;
+    width: 420px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:  10px 10px 10px #888888;;
+}
+#events {
+    background: #234465;
+}
+#events>span {
+    color: #ffffff;
+}
+#events>:hover {
+    color: orange;
+}
+article>header {
+    background: #234465;
+    font-family: LDFComicSans,Arial,sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+header>#main-head {
+    background:#234465;
+    color: #ffffff;
+    font-family:ThisNight, Helvetica, sans-serif ;
+    font-size: 100px;
+    font-weight: bold;
+}
+header>nav #top-menu>li {
+    font-family: ThisNight,Helvetica,sans-serif;
+    font-size: 23px;
+    margin: 15px;
+    color: #234465;
+    font-weight: bold;
+    padding: 10px;
+}
+.author {
+    font-style: italic;
+}
+img {
+    max-width: 100%;
+}
+footer {
+    background:#234465;
+    margin-top: 50px;
+}
+footer>div>.center-align>#bottom-menu>li {
+    color:#ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+}
+footer>div>.center-align>#bottom-menu {
+    border-bottom: 1px solid #ffffff;
+}
+#last-section {
+    height: 200px;
+}
+#last-section> .center-align {
+    color: #ffffff;
+    margin: 30px auto 0 auto;
+}
+#main-head>.center-align:hover {
+    cursor: pointer;
+    color: orange;
+}
+#top-menu>li:hover {
+    color: orange;
+    cursor: pointer;
+}
+#bottom-menu>li>span:hover {
+    background: orange;
+    cursor: pointer;
+    color:#234465;
+    padding: 5px;
+}
+#bottom-menu>li>span {
+    padding: 5px;
+}
+#last-section> .center-align:hover {
+    color: orange;
+    cursor: pointer;
+}
