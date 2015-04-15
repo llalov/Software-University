@@ -1,0 +1,25 @@
+label {
+    display: block;
+}
+input {
+    display: block;
+}
+#checkBox {
+    display: inline-block;
+}
+header {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+body {
+    width: 300px;
+    margin: auto;
+    background: #FFF7F0;
+}
+.redAsterisk {
+    color: red;
+}
+#deliveryNote {
+    visibility: hidden;
+}
