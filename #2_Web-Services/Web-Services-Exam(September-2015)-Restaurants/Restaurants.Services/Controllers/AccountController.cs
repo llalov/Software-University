@@ -41,7 +41,7 @@
         }
 
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
-        
+
         // POST api/Account/Logout
         [Route("Logout")]
         public IHttpActionResult Logout()

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using Microsoft.AspNet.Identity;
-using MoviesGallery.WebServices.Controllers;
-using Restaurants.Models;
-using Restaurants.Services.Models;
-
-namespace Restaurants.Services.Controllers
+﻿namespace Restaurants.Services.Controllers
 {
+    using System.Linq;
+    using System.Web.Http;
+    using Microsoft.AspNet.Identity;
+    using MoviesGallery.WebServices.Controllers;
+    using Restaurants.Models;
+    using Restaurants.Services.Models;
+
     public class OrdersController : BaseApiController
     {
         [HttpGet]
@@ -28,7 +25,7 @@ namespace Restaurants.Services.Controllers
                 .Select(o => new
                 {
                     id = o.Id,
-                    meal = new {id = o.Meal.Id, name = o.Meal.Name, price = o.Meal.Price, type = o.Meal.Type.Name},
+                    meal = new { id = o.Meal.Id, name = o.Meal.Name, price = o.Meal.Price, type = o.Meal.Type.Name },
                     quantity = o.Quantity,
                     status = o.OrderStatus,
                     createdOn = o.CreatedOn

@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using Microsoft.Ajax.Utilities;
-using Microsoft.AspNet.Identity;
-using MoviesGallery.WebServices.Controllers;
-using Restaurants.Data;
-using Restaurants.Models;
-using Restaurants.Services.Models;
-
-namespace Restaurants.Services.Controllers
+﻿namespace Restaurants.Services.Controllers
 {
+    using System.Linq;
+    using System.Web.Http;
+    using Microsoft.AspNet.Identity;
+    using MoviesGallery.WebServices.Controllers;
+    using Restaurants.Data;
+    using Restaurants.Models;
+    using Restaurants.Services.Models;
+
     public class RestaurantsController : BaseApiController
     {
         public RestaurantsController(IRestaurantsData data)
@@ -28,14 +24,14 @@ namespace Restaurants.Services.Controllers
                 .OrderByDescending(r => r.Ratings.Average(rat => rat.Stars))
                 .ThenBy(r => r.Name);
 
-           
+
             var data = restaurants.Select(r => new
             {
                 id = r.Id,
                 name = r.Name,
                 rating = r.Ratings.Average(rat => rat.Stars).ToString(),
-                town = new {id = r.TownId, name = r.Town.Name}
-                
+                town = new { id = r.TownId, name = r.Town.Name }
+
             });
 
             return this.Ok(data);
@@ -75,16 +71,22 @@ namespace Restaurants.Services.Controllers
 
             return this.CreatedAtRoute("DefaultApi",
                  new { controller = "restaurants", id = restaurant.Id },
-                new { id = restaurant.Id, name = restaurant.Name, rating = restaurant.Ratings , town = 
+                new
+                {
+                    id = restaurant.Id,
+                    name = restaurant.Name,
+                    rating = restaurant.Ratings,
+                    town =
                 Data.Restaurants
                 .All()
-                .Where( r => r.Id == restaurant.Id)
+                .Where(r => r.Id == restaurant.Id)
                 .Select(r => new
                 {
                     id = r.TownId,
                     name = r.Town.Name
                 })
-                .FirstOrDefault()   }
+                .FirstOrDefault()
+                }
                 );
         }
 
@@ -108,13 +110,13 @@ namespace Restaurants.Services.Controllers
 
             var loggedUserId = User.Identity.GetUserId();
 
-            
+
             if (restaurant.OwnerId == loggedUserId)
             {
                 return this.BadRequest();
             }
 
-           
+
             var usersRestRating = Data.Ratings
                 .All()
                 .FirstOrDefault(r => r.UserId == loggedUserId && r.RestaurantId == restaurant.Id);
@@ -130,7 +132,7 @@ namespace Restaurants.Services.Controllers
                 var rating = new Rating
                 {
                     Stars = model.Stars,
-                    UserId = loggedUserId,                   
+                    UserId = loggedUserId,
                     RestaurantId = id
                 };
 
@@ -138,7 +140,7 @@ namespace Restaurants.Services.Controllers
                 this.Data.SaveChanges();
             }
 
-           
+
             return this.Ok();
 
         }

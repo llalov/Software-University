@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
-
-namespace Restaurants.Services.Models
+﻿namespace Restaurants.Services.Models
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class RestaurantBindingModel
     {
         public string Name { get; set; }

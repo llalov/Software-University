@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using Microsoft.AspNet.Identity;
-using MoviesGallery.WebServices.Controllers;
-using Restaurants.Models;
-using Restaurants.Services.Models;
-
-namespace Restaurants.Services.Controllers
+﻿namespace Restaurants.Services.Controllers
 {
-    public class MealsController: BaseApiController
+    using System;
+    using System.Linq;
+    using System.Web.Http;
+    using Microsoft.AspNet.Identity;
+    using MoviesGallery.WebServices.Controllers;
+    using Restaurants.Models;
+    using Restaurants.Services.Models;
+
+    public class MealsController : BaseApiController
     {
         [HttpPost]
         [Authorize]
         [Route("api/meals")]
-        public IHttpActionResult CreateMeal( MealBindingModel model)
+        public IHttpActionResult CreateMeal(MealBindingModel model)
         {
             if (!this.ModelState.IsValid)
             {
@@ -23,7 +21,7 @@ namespace Restaurants.Services.Controllers
             }
             var loggedUserId = User.Identity.GetUserId();
             var restaurant = Data.Restaurants.Find(model.RestaurantId);
-            
+
             if (restaurant.OwnerId != loggedUserId)
             {
                 return this.Unauthorized();
@@ -34,7 +32,7 @@ namespace Restaurants.Services.Controllers
                 RestaurantId = model.RestaurantId,
                 TypeId = model.TypeId,
                 Price = model.Price,
-                              
+
             };
 
             this.Data.Meals.Add(meal);
@@ -42,14 +40,17 @@ namespace Restaurants.Services.Controllers
 
             return this.CreatedAtRoute("DefaultApi",
                 new { controller = "meals", id = meal.Id },
-                new { id = meal.Id,
-                      name = meal.Name,
-                      price = meal.Price,
-                      type = Data.Meals
+                new
+                {
+                    id = meal.Id,
+                    name = meal.Name,
+                    price = meal.Price,
+                    type = Data.Meals
                         .All()
-                        .Where(m => m.TypeId == model.TypeId )
-                        .Select( m => m.Type.Name)
-                        .FirstOrDefault()});
+                        .Where(m => m.TypeId == model.TypeId)
+                        .Select(m => m.Type.Name)
+                        .FirstOrDefault()
+                });
         }
 
         [HttpPut]
@@ -76,7 +77,7 @@ namespace Restaurants.Services.Controllers
             {
                 return this.Unauthorized();
             }
-            
+
             meal.Name = model.Name;
             meal.Price = model.Price;
             meal.TypeId = model.TypeId;
@@ -84,13 +85,18 @@ namespace Restaurants.Services.Controllers
             this.Data.SaveChanges();
 
             return this.CreatedAtRoute("DefaultApi",
-                new {controller = "meals", id = meal.Id},
-                new {id = meal.Id, name = meal.Name, price = meal.Price, type = Data.Meals
+                new { controller = "meals", id = meal.Id },
+                new
+                {
+                    id = meal.Id,
+                    name = meal.Name,
+                    price = meal.Price,
+                    type = Data.Meals
                         .All()
                         .Where(m => m.TypeId == model.TypeId)
                         .Select(m => m.Type.Name)
                         .FirstOrDefault()
-                });        
+                });
 
         }
 
@@ -145,7 +151,7 @@ namespace Restaurants.Services.Controllers
             {
                 return this.BadRequest();
             }
-           
+
             var loggedUserId = User.Identity.GetUserId();
 
             var order = new Order()
