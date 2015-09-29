@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4. Semantics</title>
+    <link rel="stylesheet" href="4_4_BGJUGWebPage.css">
+</head>
+<body>
+<header>
+    <h1>BGJUG - Bulgarian Java User Group</h1>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Events</li>
+            <li>Contacts</li>
+            <li>
+                <input type="search" name="search" id="search">
+            </li>
+        </ul>
+    </nav>
+</header>
+<aside id="left">
+    <ul>
+        <li><a href="#">An Architecture for E-Voting</a>
+        </li>
+        <li><a href="#">Integration Tests for External Services</a>
+        </li>
+        <li><a href="#">Algorithmic Music Influenced by Tweets</a>
+        </li>
+        <li><a href="#">The Low Quality os Scientific Code</a>
+        </li>
+        <li><a href="#">Development "Methodologies"</a>
+        </li>
+    </ul>
+</aside>
+<aside id="right">
+    <div id="lang">
+        <h3>Language</h3>
+        <select name="lang">
+            <option value="bg">Bulgarian</option>
+            <option value="en">English</option>
+            <option value="ger">German</option>
+        </select>
+        <h3>Blogroll</h3>
+    </div>
+</aside>
+<main>
+    <article class="entry">
+        <header class="entry-header">
+            <h2 class="entry-title">An Architecture for E-voting</h2>
+            <div class="meta">
+                by <a href="#" class="author">Bozho</a> on
+                <time datetime="2014-05-27">MAY 27, 2014</time> <a href="#" class="comment">Leave a comment</a>
+            </div>
+        </header>
+        <div class="entry-content">
+            E-voting is a hot topic in my country,and has been discussed a lot everywhere. Since we are already using the internet and touch-screen technologies in our everyday lives, why not apply that to voting? And not for the sake of technology itself, but in order to prevent technical mistakes and election fraud, and make [...]
+        </div>
+        <a href="#" class="more">Continue Reading →</a>
+    </article>
+    <article class="entry">
+        <header class="entry-header">
+            <h2 class="entry-title">The Optional API</h2>
+            <div class="meta">
+                by <a href="#" class="author">Bozho</a> on
+                <time datetime="2014-03-19">MARCH 19, 2014</time> <a href="#" class="comment">Leave a comment</a>
+            </div>
+        </header>
+        <div class="entry-content">
+            Java 8 introduces the Optional class. In a nutshell, instead of returning null, and then checking for null, you return an Optional instance, which can either have or not have a value set. That way you don’t fail with NullPointerException. I won’t discuss whether the Optional type will eliminate NPEs completely (it won’t). Instead I’ll […]
+        </div>
+        <a href="#" class="more">Continue Reading →</a>
+    </article>
+</main>
+<footer>
+    <table>
+        <tr>
+            <th rowspan="2" id="foot-header">
+                <a href="#">BGJUG - Java Bulgarian User Group</a>
+            </th>
+            <th>Pages</th>
+            <th>The Latest</th>
+            <th>More</th>
+            <th rowspan="2" id="copy">&copy; 2011 BGJUG - Java Bulgarian User Group</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <a href="#">An Architecture for E-Voting</a>
+                <p>E-voting is a hot topic in my country, and has been discussed [....]</p>
+            </td>
+            <td>
+                <p>
+                    Thanks for dropping by! Feel free to join the discussion by leaving comments, and stay updated by subscribing to the <a href="#">RSS Feed</a>.
+                </p>
+            </td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>

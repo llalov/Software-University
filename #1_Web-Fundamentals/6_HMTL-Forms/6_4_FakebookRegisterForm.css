@@ -1,0 +1,66 @@
+body {
+    background: #3B5997;
+    font-family: Tahoma;
+}
+#leftFieldSet {
+    display: inline-block;
+    position: absolute;
+}
+#leftFieldSet > fieldset {
+    height: 15.55rem;
+}
+#rightFieldSet {
+    display: inline-block;
+    margin-left: 24rem;
+}
+fieldset {
+    border-radius: 10px;
+    color: #ffffff;
+}
+.birthday {
+    width: 15rem;
+    height: 1.4rem;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+    margin-right: 0.1rem;
+}
+.small {
+    width: 5.5rem;
+    height: 1.4rem;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+    margin-right: 0.1rem;
+}
+.normal {
+    width: 10rem;
+    height: 1.4rem;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+    margin-right: 0.1rem;
+}
+textarea {
+    width: 495px;
+    height: 80px;
+}
+input[type=reset]#buttonClearForm {
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background: #DDDDDD;
+    color: #395797;
+}
+input[type=button]#buttonRegister {
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    height: 3rem;
+    border-radius: 5px;
+    background: #DDDDDD;
+    color: #395797;
+}
+img {
+    width: 68%;
+}
+

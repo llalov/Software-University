@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+main {
+    padding-left: 295px;
+}
+body {
+    background: #000000;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 34px;
+    color: white;
+    font-family: Tahoma;
+}
+ul {
+    display: inline-block;
+    margin-left: 40px;
+}
+header {
+    font-size: 50px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #F2C106;
+    text-align: center;
+    padding: 15px;
+}
