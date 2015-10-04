@@ -20,9 +20,9 @@ class TorrentsController extends BaseController {
         $this->authorize();
         $this->isAdmin();
         if ($this->isPost) {
-            $name = $_POST['torrent_name'];
-            $type = $_POST['torrent_type'];
-            $size = $_POST['torrent_size'];
+            $name = htmlspecialchars($_POST['torrent_name']);
+            $type = htmlspecialchars($_POST['torrent_type']);
+            $size = htmlspecialchars($_POST['torrent_size']);
             if ($this->db->createTorrent($name, $type, $size)) {
                 $this->addInfoMessage("Torrent added.");
                 $this->redirect('torrents');

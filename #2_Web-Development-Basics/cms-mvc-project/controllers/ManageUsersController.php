@@ -32,7 +32,7 @@ class ManageUsersController extends BaseController {
         $this->authorize();
         $this->isAdmin();
         if ($this->isPost) {
-            $id = $_POST['updateId'];
+            $id = htmlspecialchars($_POST['updateId']);
             $isAdmin = $_POST['updateIsAdmin'];
             $isEditor = $_POST['updateIsEditor'];
             $isUpdated = $this->db->updateUser($id, $isAdmin, $isEditor);

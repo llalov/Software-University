@@ -19,8 +19,8 @@ class FeedbacksController extends BaseController {
         $this->authorize();
         $this->isAdmin();
         if ($this->isPost) {
-            $username = $_POST['Name'];
-            $feedback = $_POST['Feedback'];
+            $username = htmlspecialchars($_POST['Name']);
+            $feedback = htmlspecialchars($_POST['Feedback']);
             if ($this->db->createFeedback($username, $feedback)) {
                 $this->addInfoMessage("Your feedback was submitted!");
                 $this->redirect('torrents');
