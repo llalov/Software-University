@@ -17,7 +17,6 @@ class FeedbacksController extends BaseController {
 
     public function create() {
         $this->authorize();
-        $this->isAdmin();
         if ($this->isPost) {
             $username = htmlspecialchars($_POST['Name']);
             $feedback = htmlspecialchars($_POST['Feedback']);

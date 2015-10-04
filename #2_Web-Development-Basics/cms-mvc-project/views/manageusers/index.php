@@ -28,7 +28,7 @@
         <th>Username</th>
         <th>Feedback</th>
     </tr>
-    <h1>Users Feeedbacks:</h1>
+    <h1>Users Feeedbacks</h1>
 <?php
 foreach ($this->feedbacks as $feedback ) : ?>
 <tr>

@@ -2,9 +2,9 @@
 
     <h1>Update User</h1>
 <?= startForm("/manageUsers/update", "post") ?>
-<?= label("updateId", "Id")  ?>
+<?= label("updateId", "Id")  ?><br>
 <?= textField("updateId","updateId")  ?><br>
-Is Admin: <?= dropdown("updateIsAdmin",array(
+Is Admin<br> <?= dropdown("updateIsAdmin",array(
     [
         "value" => 0,
         "placeholder" => "No"
@@ -14,7 +14,7 @@ Is Admin: <?= dropdown("updateIsAdmin",array(
         "placeholder" => "Yes"
     ]
 )) ?><br>
-Is Editor: <?= dropdown("updateIsEditor",array(
+Is Editor<br><?= dropdown("updateIsEditor",array(
     [
         "value" => 0,
         "placeholder" => "No"
@@ -23,6 +23,8 @@ Is Editor: <?= dropdown("updateIsEditor",array(
         "value" => 1,
         "placeholder" => "Yes"
     ]
-)) ?><br>
+)) ?>
+<br>
+<br>
 <?= submitButton("Update User") ?>
 <?= endForm() ?>
