@@ -2,7 +2,8 @@
 $_SESSION['xsrf-token'] = uniqid();
 ?>
 
-    <h1>Register</h1>
+    <h1 style="margin-left: 5%">Register</h1>
+<div style="margin-left: 5%">
 <?= startForm("/account/register", "post") ?>
 <?= label("username", "Username")  ?><br>
 <?= textField("username","username")  ?><br>
@@ -12,3 +13,4 @@ $_SESSION['xsrf-token'] = uniqid();
 <?= submitButton("Register") ?>
     <a href="/account/login">Go login.</a>
 <?= endForm() ?>
+</div>

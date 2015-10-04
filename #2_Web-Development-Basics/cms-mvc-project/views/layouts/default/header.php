@@ -25,21 +25,23 @@
     </head>
     <body>
         <header>
-            <ul>
-                <li>
-                    <a href="/">[Home]</a>
+            <div class="panel panel-default">
+                <div class="panel-body">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active">
+                    <a href="/">Home</a>
                 </li>
                 <?php if ($this->userRole != 'admin') : ?>
-                <li>
-                    <a href="/torrents">[Torrents]</a>
+                <li role="presentation" class="active">
+                    <a href="/torrents">Torrents</a>
                 </li>
                 <?php endif ?>
                 <?php if ($this->userRole == 'admin') : ?>
-                    <li>
-                        <a href="/torrents">[Manage Content]</a>
+                    <li role="presentation" class="active">
+                        <a href="/torrents">Manage Content</a>
                     </li>
-                    <li>
-                        <a href="/manageusers">[Manage Users]</a>
+                    <li role="presentation" class="active">
+                        <a href="/manageusers">Manage User</a>
                     </li>
                 <?php endif ?>
             </ul>
@@ -49,6 +51,8 @@
                 <form action="/account/logout"><input type="submit" value="Logout"/></form>
             </div>
            <?php endif ?>
+                    </div>
+            </div>
         </header>
 
     <?php include('messages.php');

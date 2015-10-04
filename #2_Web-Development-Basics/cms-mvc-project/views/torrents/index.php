@@ -1,8 +1,13 @@
 <?php include_once"customViewHelpers/formHelpers.php";
     $_SESSION['xsrf-token'] = uniqid(); ?>
-<h1><?= htmlspecialchars($this->title)?></h1>
+<h1 style="margin-left: 5%"><?= htmlspecialchars($this->title)?></h1>
 
-<table>
+<div class="panel panel-default" style="width: 90% !important; margin: auto">
+  <!-- Default panel contents -->
+  <div class="panel-body">
+  </div>
+
+  <table class="table">
     <tr>
         <th>ID</th>
         <th>Name</th>
@@ -11,34 +16,34 @@
         <th></th>
     </tr>
     <?php
-        foreach ($this->torrents as $torrent ) : ?>
-            <tr>
-                <td><?= htmlspecialchars($torrent['id'])?></td>
-                <td><?= htmlspecialchars($torrent['name'])?></td>
-                <td><?= htmlspecialchars($torrent['type'])?></td>
-                <td><?= htmlspecialchars($torrent['size'])?></td>
-                <td><a href="">[Download]</a></td>
-                <?php if ($this->userRole == 'admin') : ?>
-                <td><a href="/torrents/delete/<?= $torrent['id']?>">[DELETE]</a></td>
-                <?php endif ?>
-            </tr>
-      <?php  endforeach ?>
-</table>
+foreach ($this->torrents as $torrent ) : ?>
+    <tr>
+        <td><?= htmlspecialchars($torrent['id'])?></td>
+        <td><?= htmlspecialchars($torrent['name'])?></td>
+        <td><?= htmlspecialchars($torrent['type'])?></td>
+        <td><?= htmlspecialchars($torrent['size'])?></td>
+        <td><a href="">Download</a></td>
+        <?php if ($this->userRole == 'admin') : ?>
+            <td><a  class="btn btn-sm btn-danger" href="/torrents/delete/<?= $torrent['id']?>">DELETE</a></td>
+        <?php endif ?>
+    </tr>
+<?php  endforeach ?>
+  </table>
+</div>
 
 <?php if ($this->userRole == 'admin') : ?>
-    <a href="/torrents/create">[Add Torrent]</a>
+    <a style="margin-left: 5%" class="btn btn-sm btn-success" href="/torrents/create">Add Torrent</a>
     <br>
     <hr>
 <?php endif ?>
 <br>
 <br>
-<br>
-<br>
+
     <?php
     foreach ($this->forms as $form ) : ?>
-            <div><?= $form['html']?></div>
+            <div style="margin-left: 5%"><?= $form['html']?></div>
             <?php if ($this->userRole == 'admin') : ?>
-            <a href="/torrents/delForm/<?= $form['id']?>">[DELETE FORM]</a>
+            <a style="margin-left: 5%"  class="btn btn-sm btn-danger" href="/torrents/delForm/<?= $form['id']?>">DELETE FORM</a>
             <br>
             <?php endif ?>
         </tr>
@@ -53,7 +58,7 @@
         <?= submitButton('Change color') ?>
     <?= endForm() ?>
     </div>
-    <div style="display: block">
+    <div style="margin-left: 5%">
     Add Form <input type="checkbox" id="checkBoxForm" onclick="check('checkBoxForm', 'form')"/>
     <?= startForm("/torrents/crtFrm", "post","form") ?>
     Form Action: <?= textField("formAction", "formAction") ?><br>
