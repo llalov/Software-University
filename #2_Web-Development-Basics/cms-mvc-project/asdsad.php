@@ -1,1 +1,0 @@
-<form action="/blaaa" method="post">Testtttt <input type="text" name="Testtttt"><br> <input type="checkbox" name=""><br> <input type="radio" name=""><br>Test <textarea rows="4" cols="50" name="Test"></textarea><br><input type="submit" value="Submit"></form>
