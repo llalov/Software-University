@@ -1,0 +1,158 @@
+* {
+    padding:0;
+    margin: 0;
+}
+body {
+    background-color: #00923E;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+.main-table {
+    margin: 20px auto auto auto;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color:#C8C8C8;
+}
+tbody tr:nth-child(even) td{
+    background-color:#C8C8C8;
+}
+td {
+    border: 1px solid black;
+    height: 35px;
+}
+th {
+    border: 1px solid #000000;
+    background:#F8C711;
+    height: 45px;
+}
+th.country {
+    padding: 7px;
+}
+.country {
+    height: 30px;
+    width: 153px;
+    font-size: 23px;
+}
+
+.result {
+    width: 90px;
+    font-size: 23px;
+}
+.group {
+    width: 90px;
+    font-size: 23px;
+}
+.place-a-bet {
+    width: 420px;
+    font-size: 23px;
+}
+.no-border- {
+    border: none !important;
+}
+.select-score-table td {
+    margin: auto;
+    background: #DCDCDC;
+    padding: 3px 0 3px 2px;
+    border: 1px solid #B6B6B6;
+    height: 6px;
+
+}
+.select-score-table {
+    margin: auto;
+
+}
+.button-red {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 100%;
+    background: #FF0000;
+    margin: 3px auto 3px auto;
+    text-align: center;
+    padding: 6px;
+}
+.button-red>p {
+    position: relative;
+    color: white;
+    margin-top: 2px;
+    font-size: 11px;
+    font-weight: 600;
+}
+.button-green {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 100%;
+    background: #008000;
+    margin: 3px auto 3px auto;;
+    text-align: center;
+    padding: 6px;
+}
+.button-green>p{
+    position: relative;
+    color: white;
+    margin-top: 2px;
+    font-size: 11px;
+    font-weight: 600;
+}
+th:first-child {
+    background: #F8C711;
+    border-top-left-radius: 15px;
+}
+th:last-child {
+    background: #F8C711;
+    border-top-right-radius: 15px;
+}
+#bottom-left {
+    border-bottom-left-radius: 15px;
+    background-color: white;
+}
+#bottom-right {
+    border-bottom-right-radius: 15px;
+    background-color: white;
+}
+tfoot td:not(:first-child){
+    background-color: white;
+}
+.green-zero {
+    color: #008000;
+}
+.red-zero {
+    color: red;
+}
+img {
+    width: 23px;
+    height: 16px;
+    margin-bottom: -5px;
+    padding: 3px;
+    border: 1px solid #C8C8C8;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.right-align-flag {
+    float: right;
+    margin: 5px;
+}
+.right-align-flag td {
+    border: none;
+}
+.left-align-flag {
+    float: left;
+    margin: 5px;
+}
+.left-align-flag td {
+    border: none;
+}
+.score{
+    margin: auto;
+}
+.score td {
+    border: none;
+}
+

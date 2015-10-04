@@ -1,0 +1,82 @@
+
+body {
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+#mainHeader {
+    color:#204671;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    font-size: 21px;
+}
+#leftDiv {
+    display: inline-block;
+    width: 38%;
+}
+#rightDiv{
+    display: inline-block;
+    width: 14.2%;
+    border: #E4F3FB;
+
+}
+
+.cell {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    border: 1px solid #E4F3FB;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    background: #F7FCFF;
+}
+header {
+    margin-left: 0.5rem;
+}
+span {
+    color:#204671;
+    font-weight: bold;
+}
+img {
+    width: 9.5rem;
+    height: 5rem;
+}
+.price {
+    height: 2rem;
+    width: 6em;
+    border-top-left-radius: 10px;
+    background: #2C425A;
+    text-align: center;
+    float: right;
+    color: #ffffff;
+}
+.rangeValue {
+    width: 90px;
+    display: inline-block;
+}
+.rangeValueRight {
+    text-align: right;
+    width: 90px;
+    display: inline-block;
+    float: right;
+}
+.wrapper {
+    width: 190px;
+    background: #F7FCFF;
+}
+.title {
+
+}
+input[type=range] {
+    width: 187px;
+}
+label {
+    display: block;
+    text-align: center;
+}
+span.priceSpan {
+    display: inline-block;
+    margin-top: 7px;
+    color: #ffffff;
+}
