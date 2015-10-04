@@ -9,6 +9,7 @@ class ManageUsersController extends BaseController {
 
     public function index() {
         $this->authorize();
+        $this->isAdmin();
         $this->users = $this->db->getAll();
         $this->backgroundColor = $this->db->getColor();
         $this->feedbacks = $this->db->getAllFeedbacks();
