@@ -1,5 +1,5 @@
 <footer id="footer">
-    (c) MVC Framework
+    (c) CMS Torrents-MVC
 </footer>
 </body>
 </html>

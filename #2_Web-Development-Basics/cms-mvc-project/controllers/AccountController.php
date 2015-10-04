@@ -10,7 +10,7 @@ class AccountController extends BaseController {
     }
 
     public function register() {
-
+        $this->backgroundColor = $this->db->getColor();
         if ($this->isPost) {
             $username = htmlspecialchars($_POST['username']);
             if(strlen($username) < 3 || $username == null) {
@@ -34,6 +34,7 @@ class AccountController extends BaseController {
     }
 
     public function login() {
+        $this->backgroundColor = $this->db->getColor();
         if($this->isPost) {
             $username = htmlspecialchars($_POST['username']);
             $password = htmlspecialchars( $_POST['password']);

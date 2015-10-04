@@ -31,6 +31,7 @@ class ManageUsersController extends BaseController {
     public function update() {
         $this->authorize();
         $this->isAdmin();
+        $this->backgroundColor = $this->db->getColor();
         if ($this->isPost) {
             $id = htmlspecialchars($_POST['updateId']);
             $isAdmin = $_POST['updateIsAdmin'];

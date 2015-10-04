@@ -19,6 +19,7 @@ class TorrentsController extends BaseController {
     public function create() {
         $this->authorize();
         $this->isAdmin();
+        $this->backgroundColor = $this->db->getColor();
         if ($this->isPost) {
             $name = htmlspecialchars($_POST['torrent_name']);
             $type = htmlspecialchars($_POST['torrent_type']);

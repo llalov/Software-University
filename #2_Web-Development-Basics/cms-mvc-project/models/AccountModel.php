@@ -3,6 +3,12 @@
 class AccountModel extends BaseModel {
     public $result;
 
+    public function getColor() {
+        $id = 1;
+        $statement = self::$db->query("SELECT * FROM parameters WHERE id = $id");
+        return $statement->fetch_all(MYSQLI_ASSOC);
+    }
+
     public function register($username, $password) {
 
         /*XSRF-TOKEN CHECK*/
