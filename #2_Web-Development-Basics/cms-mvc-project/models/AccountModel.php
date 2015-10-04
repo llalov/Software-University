@@ -4,6 +4,12 @@ class AccountModel extends BaseModel {
     public $result;
 
     public function register($username, $password) {
+
+        /*XSRF-TOKEN CHECK*/
+        if (!isset($_POST['xsrf-token']) ||($_POST['xsrf-token'] != $_SESSION['xsrf-token'])) {
+            return false;
+        }
+
         $statement = self::$db->prepare("SELECT username FROM users WHERE username = ?");
         $statement->bind_param("s", $username);
         $statement->execute();
@@ -24,6 +30,10 @@ class AccountModel extends BaseModel {
     }
 
     public function login($username, $password) {
+        /*XSRF-TOKEN CHECK*/
+        if (!isset($_POST['xsrf-token']) ||($_POST['xsrf-token'] != $_SESSION['xsrf-token'])) {
+            return false;
+        }
         $statement = self::$db->prepare("SELECT id, username, pass_hash FROM users WHERE username = ?");
         $statement->bind_param("s", $username);
         $statement->execute();
