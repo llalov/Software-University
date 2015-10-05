@@ -51,15 +51,14 @@ foreach ($this->torrents as $torrent ) : ?>
 
 <?php if ($this->userRole == 'admin') : ?>
     <hr>
-    <div style="display: inline-block; float: right">
+    <div style="display: inline-block; float: right; margin-right: 5%">
     <br>Change Backgroud <input type="checkbox" id="checkBoxBackground" onclick="check('checkBoxBackground', 'background')"/>
     <?= startForm("/torrents/chngBackgr", "post","background") ?>
         <input type="color" name="backgroundColor" id="backgroudColor"/><br>
         <?= submitButton('Change color') ?>
     <?= endForm() ?>
     </div>
-    <div style="margin-left: 5%">
-    Add Form <input type="checkbox" id="checkBoxForm" onclick="check('checkBoxForm', 'form')"/>
+    <div style="margin-left: 5%">Add Form <input type="checkbox" id="checkBoxForm" onclick="check('checkBoxForm', 'form')"/>
     <?= startForm("/torrents/crtFrm", "post","form") ?>
     Form Action: <?= textField("formAction", "formAction") ?><br>
     Form Method:  <?= dropdown("formMethod",array(

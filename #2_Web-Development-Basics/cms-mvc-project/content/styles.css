@@ -24,6 +24,10 @@ li.error {
     background: red;
 }
 
+input[type=submit] {
+
+}
+
 #logged-in-info {
     float: right;
 }
