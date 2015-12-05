@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\02.DistanceCalculatorApp\bin\Debug\02.DistanceCalculatorApp.exe.config
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\02.DistanceCalculatorApp\obj\Debug\02.DistanceCalculatorApp.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\02.DistanceCalculatorApp\bin\Debug\02.DistanceCalculatorApp.exe
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\02.DistanceCalculatorApp\bin\Debug\02.DistanceCalculatorApp.pdb
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\02.DistanceCalculatorApp\obj\Debug\02.DistanceCalculatorApp.exe
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\02.DistanceCalculatorApp\obj\Debug\02.DistanceCalculatorApp.pdb
