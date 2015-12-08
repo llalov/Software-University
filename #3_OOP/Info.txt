@@ -1,1 +1,2 @@
-All homeworks for 'Object-Oriented Programming November 2015' course in SoftUni. More information at: https://softuni.bg/trainings/1258/object-oriented-programming-november-2015 
+All homeworks for 'Object-Oriented Programming November 2015' course in SoftUni. 
+More information at: https://softuni.bg/trainings/1258/object-oriented-programming-november-2015 
