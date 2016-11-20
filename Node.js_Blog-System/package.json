@@ -1,0 +1,15 @@
+{
+  "name": "node-js-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Lachezar Lalov",
+  "license": "MIT",
+  "engines": {
+    "node": "6.6.x",
+    "npm": "3.10.x"
+  }
+}
