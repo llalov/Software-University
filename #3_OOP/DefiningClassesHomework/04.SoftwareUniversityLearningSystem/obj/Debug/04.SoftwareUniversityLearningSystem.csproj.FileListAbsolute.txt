@@ -1,6 +1,0 @@
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\04.SoftwareUniversityLearningSystem\bin\Debug\04.SoftwareUniversityLearningSystem.exe.config
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\04.SoftwareUniversityLearningSystem\bin\Debug\04.SoftwareUniversityLearningSystem.exe
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\04.SoftwareUniversityLearningSystem\bin\Debug\04.SoftwareUniversityLearningSystem.pdb
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\04.SoftwareUniversityLearningSystem\obj\Debug\04.SoftwareUniversityLearningSystem.exe
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\04.SoftwareUniversityLearningSystem\obj\Debug\04.SoftwareUniversityLearningSystem.pdb
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\04.SoftwareUniversityLearningSystem\obj\Debug\04.SoftwareUniversityLearningSystem.csprojResolveAssemblyReference.cache

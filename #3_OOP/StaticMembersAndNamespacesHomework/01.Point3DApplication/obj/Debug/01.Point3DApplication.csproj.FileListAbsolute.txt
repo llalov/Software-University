@@ -1,6 +1,0 @@
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\01.Point3DApplication\bin\Debug\01.Point3DApplication.exe.config
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\01.Point3DApplication\bin\Debug\01.Point3DApplication.exe
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\01.Point3DApplication\bin\Debug\01.Point3DApplication.pdb
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\01.Point3DApplication\obj\Debug\01.Point3DApplication.csprojResolveAssemblyReference.cache
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\01.Point3DApplication\obj\Debug\01.Point3DApplication.exe
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\01.Point3DApplication\obj\Debug\01.Point3DApplication.pdb

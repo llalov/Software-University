@@ -1,5 +1,0 @@
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\05.HTMLDispatcher\bin\Debug\05.HTMLDispatcher.exe.config
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\05.HTMLDispatcher\bin\Debug\05.HTMLDispatcher.exe
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\05.HTMLDispatcher\bin\Debug\05.HTMLDispatcher.pdb
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\05.HTMLDispatcher\obj\Debug\05.HTMLDispatcher.exe
-C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\05.HTMLDispatcher\obj\Debug\05.HTMLDispatcher.pdb

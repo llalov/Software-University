@@ -1,6 +1,0 @@
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\02.LaptopShop\bin\Debug\02.LaptopShop.exe.config
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\02.LaptopShop\bin\Debug\02.LaptopShop.exe
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\02.LaptopShop\bin\Debug\02.LaptopShop.pdb
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\02.LaptopShop\obj\Debug\02.LaptopShop.csprojResolveAssemblyReference.cache
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\02.LaptopShop\obj\Debug\02.LaptopShop.exe
-C:\Users\Lenovo\Desktop\DefiningClassesHomework\02.LaptopShop\obj\Debug\02.LaptopShop.pdb
