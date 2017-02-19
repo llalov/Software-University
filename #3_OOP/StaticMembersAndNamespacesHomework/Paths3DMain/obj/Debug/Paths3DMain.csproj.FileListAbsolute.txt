@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\Paths3DMain\bin\Debug\Paths3DMain.exe.config
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\Paths3DMain\bin\Debug\Paths3DMain.exe
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\Paths3DMain\bin\Debug\Paths3DMain.pdb
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\Paths3DMain\obj\Debug\Paths3DMain.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\Paths3DMain\obj\Debug\Paths3DMain.exe
+C:\Users\Lenovo\Desktop\StaticMembersAndNamespacesHomework\Paths3DMain\obj\Debug\Paths3DMain.pdb

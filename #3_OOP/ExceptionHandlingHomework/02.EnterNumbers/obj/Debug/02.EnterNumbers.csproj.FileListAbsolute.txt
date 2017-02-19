@@ -1,0 +1,5 @@
+C:\Users\Lenovo\Desktop\ExceptionHandlingHomework\02.EnterNumbers\bin\Debug\02.EnterNumbers.exe.config
+C:\Users\Lenovo\Desktop\ExceptionHandlingHomework\02.EnterNumbers\bin\Debug\02.EnterNumbers.exe
+C:\Users\Lenovo\Desktop\ExceptionHandlingHomework\02.EnterNumbers\bin\Debug\02.EnterNumbers.pdb
+C:\Users\Lenovo\Desktop\ExceptionHandlingHomework\02.EnterNumbers\obj\Debug\02.EnterNumbers.exe
+C:\Users\Lenovo\Desktop\ExceptionHandlingHomework\02.EnterNumbers\obj\Debug\02.EnterNumbers.pdb

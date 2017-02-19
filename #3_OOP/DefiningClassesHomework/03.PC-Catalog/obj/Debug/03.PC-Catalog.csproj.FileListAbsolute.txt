@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\DefiningClassesHomework\03.PC-Catalog\bin\Debug\03.PC-Catalog.exe.config
+C:\Users\Lenovo\Desktop\DefiningClassesHomework\03.PC-Catalog\bin\Debug\03.PC-Catalog.exe
+C:\Users\Lenovo\Desktop\DefiningClassesHomework\03.PC-Catalog\bin\Debug\03.PC-Catalog.pdb
+C:\Users\Lenovo\Desktop\DefiningClassesHomework\03.PC-Catalog\obj\Debug\03.PC-Catalog.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Desktop\DefiningClassesHomework\03.PC-Catalog\obj\Debug\03.PC-Catalog.exe
+C:\Users\Lenovo\Desktop\DefiningClassesHomework\03.PC-Catalog\obj\Debug\03.PC-Catalog.pdb

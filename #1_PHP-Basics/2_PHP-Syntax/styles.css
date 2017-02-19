@@ -1,0 +1,14 @@
+#table td {
+    width: 100px;
+    height: 10px;
+    border: 1px solid black;
+
+}
+.title {
+    background-color: #FF9C00;
+    text-align: left;
+    font-weight: bold;
+}
+.value {
+    text-align: right;
+}

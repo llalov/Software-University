@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2. Poll</title>
+</head>
+<body>
+<h1>Poll System</h1>
+
+<h3>You have <span id="timer"></span> left</h3>
+
+<div class="questions">
+    <ul>
+        <li>
+            <h2>What is your favorite game?</h2>
+            <input type="radio" name="question1" id="quake" value="Quake">
+            <label for="quake">Quake</label>
+            <input type="radio" name="question1" id="mines" value="Minesweeper">
+            <label for="mines">Minesweeper</label>
+            <input type="radio" name="question1" id="backgammon" value="Backgammon">
+            <label for="backgammon">Backgammon</label>
+            <input type="radio" name="question1" id="fifa" value="FIFA">
+            <label for="fifa">FIFA</label>
+        </li>
+        <li>
+            <h2>What is your favorite language?</h2>
+            <input name="question2" type="radio" id="php" value="PHP">
+            <label for="php">PHP</label>
+            <input name="question2" type="radio" id="c-sharp" value="C#">
+            <label for="c-sharp">C#</label>
+            <input name="question2" type="radio" id="java" value="Java">
+            <label for="java">Java</label>
+            <input name="question2" type="radio" id="haskell" value="Haskell">
+            <label for="haskell">Haskell</label>
+        </li>
+        <li>
+            <h2>What is the last book you read?</h2>
+            <input name="question3" type="radio" id="intro-programming"
+                   value="Intro programming with C#">
+            <label for="intro-programming">Intro programming with C#</label>
+            <input name="question3" type="radio" id="hitchhiker's guide"
+                   value="The hitchhiker's guide to the Galaxy">
+            <label for="hitchhiker's guide">The hitchhiker's guide to the Galaxy</label>
+            <input name="question3" type="radio" id="design-patterns" value="Head first design patterns">
+            <label for="design-patterns">Head first design patterns</label>
+            <input name="question3" type="radio" id="js-book" value="JavaScript: The good parts">
+            <label for="js-book">JavaScript: The good parts</label>
+        </li>
+    </ul>
+    <button id="submit">Submit</button>
+</div>
+<div class="result">
+    <h2>Answers:</h2>
+    <button id="go-back">Back</button>
+    <ul>
+        <li>
+            <h3>What is your favorite color ?</h3>
+            <span>Your answer: </span>
+            <span class="answer" id="result-answer1"></span>
+        </li>
+        <li>
+            <h3>What is your favorite car ?</h3>
+            <span>Your answer: </span>
+            <span class="answer" id="result-answer2"></span>
+        </li>
+        <li>
+            <h3>What is your favorite book ?</h3>
+            <span>Your answer: </span>
+            <span class="answer" id="result-answer3"></span>
+        </li>
+    </ul>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="poll.js"></script>
+</body>
+</html>

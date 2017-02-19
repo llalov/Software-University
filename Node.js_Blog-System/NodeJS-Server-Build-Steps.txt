@@ -1,0 +1,32 @@
+1. "npm init"
+2. "npm install standard --save-exact"
+3. package.json -> 
+	"scripts": {
+       "start": "node index.js"
+    },
+4. VS Code -> create "index.js" -> green light -> create "jsconfig.json" file
+5. (Intellisens ans Typings):	
+	- "npm install -g typings"  (Typings, the type definition manager for TypeScript, makes it easy to search for and install TypeScript definition files into your workspace.)
+	- "typings install dt~node --global --save" (Using the Typings command line, pull down the Node.js type definition files)
+6. "npm install -g bower" and then "bower init" (Package manager for client side libraries)
+7. "npm install -g jquery" (if you want to add jquery); "npm install -g jsdom"
+8. "npm install -g gulp" and then "npm install gulp" (Gulp is a Node.js task runner e.g. concatenate and minify; compile SASS/LESS; run unit tests; deploy to git and cloud)
+9. "npm-install node-inspector -g" -> "node index.js --debug"
+10. "npm install nodemon -g" -> "nodemon index.js"
+11. "npm install multiparty" or "npm install multiparty --save-exact"
+
+---------------------App Deployment in Cloud---------------------
+11. package.json -> 
+	  "engines": {
+	    "node": "6.6.x",
+		"npm": "3.10.x"
+	  }
+12. index.js -> let port = process.env.PORT || 9892
+				let environment = process.env.NODE_ENV
+13. "set NODE_ENV=development"
+14. HEROKU:
+	- create "procfile" -> web: node index.js
+	- "git init", "git add -A", "git commit"
+	- "git push heroku master"
+	- "heroku open"
+
