@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_1_Reverse-Numbers-With-St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_3_Array-Based-Stack", "2_3_Array-Based-Stack\2_3_Array-Based-Stack.csproj", "{4016113C-F14C-424A-B8DD-0D0C0F1A4117}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_3_1_Array-Based-Stack.Testst", "2_3_1_Array-Based-Stack.Testst\2_3_1_Array-Based-Stack.Testst.csproj", "{17126F51-3123-4BAF-85FD-F2E81E1C0F4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4016113C-F14C-424A-B8DD-0D0C0F1A4117}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4016113C-F14C-424A-B8DD-0D0C0F1A4117}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4016113C-F14C-424A-B8DD-0D0C0F1A4117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17126F51-3123-4BAF-85FD-F2E81E1C0F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17126F51-3123-4BAF-85FD-F2E81E1C0F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17126F51-3123-4BAF-85FD-F2E81E1C0F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17126F51-3123-4BAF-85FD-F2E81E1C0F4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

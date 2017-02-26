@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _2_3_Array_Based_Stack
 {
-    class ArrayStack<T>
+    public class ArrayStack<T>
     {
         private T[] elements;
         private const int InitialCapacity = 16;
